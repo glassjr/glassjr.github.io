@@ -1,0 +1,41 @@
+body {
+  padding-top: 70px;
+   /* Margin bottom by footer height */
+  margin-bottom: 60px;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.footer > .container > p {
+	margin: 20px 0;
+	font-weight: bold;
+}
+
+.footer > .container > p > a {
+	color: #999;
+
+}
+.footer > .container > p > a:hover {
+	color: #777;
+}
+
+.no-underline:hover {
+	text-decoration: none;
+}
