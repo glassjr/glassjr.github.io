@@ -9,10 +9,18 @@ html {
   min-height: 100%;
 }
 
+.no-leftp {
+  padding-left: 0px;
+}
+
+.no-topm {
+  margin-top: 0px;
+}
+
 .center-mp4 {
   margin-left: auto;
   margin-right: auto;
-  display: block
+  display: block;
 }
 
 .footer {
