@@ -9,8 +9,8 @@ html {
   min-height: 100%;
 }
 
-.no-leftp {
-  padding-left: 0px;
+.small-leftp {
+  padding-left: 20px;
 }
 
 .no-topm {
