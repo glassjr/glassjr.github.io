@@ -17,6 +17,10 @@ html {
   margin-top: 0px;
 }
 
+.no-bottomm {
+  margin-bottom: 0px;
+}
+
 .center-mp4 {
   margin-left: auto;
   margin-right: auto;
@@ -52,4 +56,16 @@ html {
 
 .no-underline:hover {
 	text-decoration: none;
+}
+
+.muted-title {
+  color: #999;
+}
+
+.muted-link {
+  color: #999;
+}
+
+.muted-link:hover {
+  color: #777;
 }

@@ -35,6 +35,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="resume.html">Resume</a></li>
 						<li class="active"><a href="projects.html">Projects<span class="sr-only">(current)</span></a></li>
+						<li><a href="food.html">Food</a></li>
 						<li><a href="blog.html">Blog</a></li>
 					</ul>
 				</div>
@@ -45,7 +46,7 @@
 		<div class="container">
 			<div class="jumbotron text-center">
 				<h1>Projects</h1>
-				<p>I make things of various quality. A lot of software, some hardware, and a little baking.</p>
+				<p>I make things of various quality. Mostly software with some hardware projects floating around.</p>
 			</div>
 		</div>
 
@@ -58,26 +59,10 @@
 			</div><br>
 
 			<div class="row">
-				<div class="col-md-8"><h2>Pan Pizza</h2></div>
+				<div class="col-md-8"><h2>Dodge Globz <small>Unity game</small></h2></div>
 			</div>
 			<div class="row">
-				<div class="col-md-6"><p>I think pan pizza is the best and easiest pizza you can make at home in a residential oven. I make just about everything from scratch: the dough, the sauce and most toppings. I use store-bought low-moisture mozzarella, though I hear homemade mozzarella is not that hard. My goto pizzas are classic pepperoni and white sauce with caramelized onions.  Recipe coming soon on my <a href="blog.html">blog</a>.</p></div>
-				<div class="col-md-6"><img src="img/panPizza.jpg" class="img-rounded img-responsive center-block"></div>
-			</div><br>
-
-			<div class="row">
-				<div class="col-md-8"><h2>Sourdough Bread</h2></div>
-			</div>
-			<div class="row">
-				<div class="col-md-6"><p>I love sandwiches, and sourdough is my favorite sandwich bread, so I made some from scratch. It's a labor of love and at times felt like having a pet around. You have this gooey mess of flour, water, and natural yeast brewing in your pantry that you have to feed a few times a week. I adapted <a href="http://www.thekitchn.com/how-to-make-sourdough-bread-224367">this</a> recipe to suit my tastes/environment. After a few weeks of maintaining a starter, I was churning out beautiful, tasty loaves on the reg. Recipe coming soon<sup>tm</sup> on my <a href="blog.html">blog</a>.</p></div>
-				<div class="col-md-6"><img src="img/sourdough.jpg" class="img-rounded img-responsive center-block"></div>
-			</div><br>
-
-			<div class="row">
-				<div class="col-md-8"><h2>Dodge Globz, Unity game</h2></div>
-			</div>
-			<div class="row">
-				<div class="col-md-6"><p>This is the final group project from a video game design class. We wanted to make a fun party fighting game along the lines Super Smash Brothers or Towerfall. </p></div>
+				<div class="col-md-6"><p>This was the final group project from a video game design class. We set out to make a fun, party fighting game along the lines Super Smash Brothers or Towerfall. Built with Unity and playable with any dual joystick controller; one joystick controls movement, one controls the shield. Players pick up and throw dodgeballs while using their reflective shield for defense and as a powerful counterattack. Mastering movement by using well-timed jumps and midair lunges leads to an exciting multiplayer experience on the sidescrolling paltformer level.</p></div>
 				<div class="col-md-6">
 					<video class="center-block img-responsive" width="720" controls muted>
   						<source src="mp4/dodgeGlobz.mp4" type="video/mp4">
@@ -90,7 +75,7 @@
 				<div class="col-md-8"><h2>Aorta Segmentation</h2></div>
 			</div>
 			<div class="row">
-				<div class="col-md-6"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis maximus odio, eget fringilla tortor laoreet at. Aliquam erat volutpat. Etiam ac tempus leo. Integer leo felis, vestibulum ac tristique nec, porttitor et ipsum. Fusce bibendum lacinia ipsum nec ullamcorper. Ut pellentesque justo eget ex ullamcorper elementum. Morbi aliquet neque orci, nec blandit leo sollicitudin eget. Donec porta, lacus eget fermentum auctor, quam justo viverra arcu, non elementum neque magna lobortis arcu. Donec in faucibus erat, sed scelerisque sem. Aenean iaculis quam non lorem viverra, vel fringilla justo efficitur.</p></div>
+				<div class="col-md-6"><p>The goal of this project was to segment, or pick out, the aorta from each slice of a CT scan by using machine learning techniques. CT scans (cat scans) use X-rays to produce cross-sectional images (slices) of scanned body parts. The associated image shows a CT scan torso slice in the top left, while the masks represent the pixels that comprise the aorta. We used two techniques to segment the aorta out of each slice of torso; sliding window support vector machine (SVM) and a convolutional nueral network (CNN). As expected, the more robust CNN provided better accuracy and precision in this classification task.</p></div>
 				<div class="col-md-6"><img src="img/aortaSegmentation.png" class="img-rounded img-responsive center-block"></div>
 			</div><br>
 
@@ -98,7 +83,7 @@
 				<div class="col-md-8"><h2>Pokemon Augmented Reality</h2></div>
 			</div>
 			<div class="row">
-				<div class="col-md-6"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis maximus odio, eget fringilla tortor laoreet at. Aliquam erat volutpat. Etiam ac tempus leo. Integer leo felis, vestibulum ac tristique nec, porttitor et ipsum. Fusce bibendum lacinia ipsum nec ullamcorper. Ut pellentesque justo eget ex ullamcorper elementum. Morbi aliquet neque orci, nec blandit leo sollicitudin eget. Donec porta, lacus eget fermentum auctor, quam justo viverra arcu, non elementum neque magna lobortis arcu. Donec in faucibus erat, sed scelerisque sem. Aenean iaculis quam non lorem viverra, vel fringilla justo efficitur.</p></div>
+				<div class="col-md-6"><p>The technical goal of this project was to implement 3D pose estimation for trading cards. This is represented by the labeled white outline superimposed over the cards as shown in the associated video. This pose provides the mathematical basis to animating anything on top of the scene, allowing for augmented reality from any camera orientation. This enables the creation of the novel applications that can blend physical and virtual user experiences. This is a very similar problem to the yellow first down line used in american football broadcasts. As the final project for a computer vision class, just about everything was built from the ground up in Matlab. SURF was used for feature detection, k-nearest neighbors for image classification, direct linear transformation to compute the homography, and RANSAC to control for outliers. The prototype proved succesful, but would be greatly improved by using newer techniques in feature detection and image smoothing.</p></div>
 				<div class="col-md-6">
 					<video class="center-block img-responsive" width="720" controls muted>
   						<source src="mp4/pokemonAR.mp4" type="video/mp4">
@@ -108,17 +93,17 @@
 			</div><br>
 
 			<div class="row">
-				<div class="col-md-8"><h2>Powder Hunter, social skiing app</h2></div>
+				<div class="col-md-8"><h2>Powder Hunter <small>social skiing app</small></h2></div>
 			</div>
 			<div class="row">
-				<div class="col-md-12"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis maximus odio, eget fringilla tortor laoreet at. Aliquam erat volutpat. Etiam ac tempus leo. Integer leo felis, vestibulum ac tristique nec, porttitor et ipsum. Fusce bibendum lacinia ipsum nec ullamcorper. Ut pellentesque justo eget ex ullamcorper elementum. Morbi aliquet neque orci, nec blandit leo sollicitudin eget. Donec porta, lacus eget fermentum auctor, quam justo viverra arcu, non elementum neque magna lobortis arcu. Donec in faucibus erat, sed scelerisque sem. Aenean iaculis quam non lorem viverra, vel fringilla justo efficitur.</p></div>
+				<div class="col-md-12"><p>Power Hunter was a social skiing and snowboarding Android app that allows users to tag locations on the mountain's trail map with pictures, comments, and terrain reports while sharing with friends or the whole mountain. Built with a friend at MHacks, the University of Michigan's hackathon, it used a tiled mapping system like Google maps, and the backend was implemented with Firebase. The apps mascot, Rusty, was a hit and even earned us a <a href="https://www.michigandaily.com/news/hackathon-attracts-1000-students">mention</a> in the school's paper.</p></div>
 			</div><br>
 
 			<div class="row">
-				<div class="col-md-8"><h2>Cocktail, bartending app</h2></div>
+				<div class="col-md-8"><h2>Cocktail <small>bartending app</small></h2></div>
 			</div>
 			<div class="row">
-				<div class="col-md-6"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis maximus odio, eget fringilla tortor laoreet at. Aliquam erat volutpat. Etiam ac tempus leo. Integer leo felis, vestibulum ac tristique nec, porttitor et ipsum. Fusce bibendum lacinia ipsum nec ullamcorper. Ut pellentesque justo eget ex ullamcorper elementum. Morbi aliquet neque orci, nec blandit leo sollicitudin eget. Donec porta, lacus eget fermentum auctor, quam justo viverra arcu, non elementum neque magna lobortis arcu. Donec in faucibus erat, sed scelerisque sem. Aenean iaculis quam non lorem viverra, vel fringilla justo efficitur.</p></div>
+				<div class="col-md-6"><p>Cocktail was a visual drink suggestion and recipe Android app. The first image shows the ingredients screen, where users input the liquors and mixers that they currently have on-hand. Give the phone a cocktail-shaker shake  and it will display a random drink recipe that can be made from the available ingredients, as shown in the second image.</p></div>
 				<div class="col-md-6"><img src="img/cocktail.jpg" class="img-responsive center-block"></div>
 			</div><br>
 
@@ -126,30 +111,30 @@
 				<div class="col-md-8"><h2>Submarine Electronic Control System</h2></div>
 			</div>
 			<div class="row">
-				<div class="col-md-6"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis maximus odio, eget fringilla tortor laoreet at. Aliquam erat volutpat. Etiam ac tempus leo. Integer leo felis, vestibulum ac tristique nec, porttitor et ipsum. Fusce bibendum lacinia ipsum nec ullamcorper. Ut pellentesque justo eget ex ullamcorper elementum. Morbi aliquet neque orci, nec blandit leo sollicitudin eget. Donec porta, lacus eget fermentum auctor, quam justo viverra arcu, non elementum neque magna lobortis arcu. Donec in faucibus erat, sed scelerisque sem. Aenean iaculis quam non lorem viverra, vel fringilla justo efficitur.</p></div>
+				<div class="col-md-6"><p>Considered the most dangerous club on campus, the human-powered submarine team designs a pedal-powered, wet (not air-tight) submarine each year, sticks a student and scuba tank inside, and races it underwater. I led the technology team from its inception and designed and created all electronic systems inside the submarine. This included a dashboard and the submarine equivalent of a transmission, a variable-pitch propellor controller. Using an arduino, teensy, lcd screen, a variety of motors, and a large array of sensors, I prototyped a system that recorded real-time data, displayed it to the pilot, and performed calculations to control the variable-pich propellor to ensure maximum efficiency.</p></div>
 				<div class="col-md-6"><img src="img/sub.jpg" class="img-rounded img-responsive center-block"></div>
 			</div><br>
 
 			<div class="row">
-				<div class="col-md-10"><h2>University of Michigan Human-Powered Submarine Team Website</h2></div>
+				<div class="col-md-12"><h2>University of Michigan Human-Powered Submarine (HPS) Team Website</h2></div>
 			</div>
 			<div class="row">
-				<div class="col-md-12"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis maximus odio, eget fringilla tortor laoreet at. Aliquam erat volutpat. Etiam ac tempus leo. Integer leo felis, vestibulum ac tristique nec, porttitor et ipsum. Fusce bibendum lacinia ipsum nec ullamcorper. Ut pellentesque justo eget ex ullamcorper elementum. Morbi aliquet neque orci, nec blandit leo sollicitudin eget. Donec porta, lacus eget fermentum auctor, quam justo viverra arcu, non elementum neque magna lobortis arcu. Donec in faucibus erat, sed scelerisque sem. Aenean iaculis quam non lorem viverra, vel fringilla justo efficitur.</p></div>
+				<div class="col-md-12"><p>Considered the most dangerous club on campus, the HPS team designs a pedal-powered, wet (not air-tight) submarine each year, sticks a student and scuba tank inside, and races it underwater. Check it out <a href="http://hps.engin.umich.edu/">here</a>. I created and managed the team's first ever online presence, leading to more press, members, and funding.</p></div>
 			</div><br>
 
 			<div class="row">
-				<div class="col-md-8"><h2>DatFacts, parody texting alert service</h2></div>
+				<div class="col-md-8"><h2>DatFacts <small>parody texting alert service</small></h2></div>
 			</div>
 			<div class="row">
-				<div class="col-md-6"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis maximus odio, eget fringilla tortor laoreet at. Aliquam erat volutpat. Etiam ac tempus leo. Integer leo felis, vestibulum ac tristique nec, porttitor et ipsum. Fusce bibendum lacinia ipsum nec ullamcorper. Ut pellentesque justo eget ex ullamcorper elementum. Morbi aliquet neque orci, nec blandit leo sollicitudin eget. Donec porta, lacus eget fermentum auctor, quam justo viverra arcu, non elementum neque magna lobortis arcu. Donec in faucibus erat, sed scelerisque sem. Aenean iaculis quam non lorem viverra, vel fringilla justo efficitur.</p></div>
+				<div class="col-md-6"><p>Based on the classic reddit texting troll, <a href="http://knowyourmeme.com/memes/events/cat-facts-text-trolling">CatFacts</a>, DatFacts extended and automated the prank, enabling the sending of overbearing facts on any topic to any phone number. Built for MHacks, DatFacts proved great fun and caused a bit of a stir on the showroom floor during the hackathon expo. Twilio made the sending of texts very easy, and we scraped Wikipedia for facts.</p></div>
 				<div class="col-md-6"><img src="img/datfacts.png" class="img-responsive center-block"></div>
 			</div><br>
 
 			<div class="row">
-				<div class="col-md-8"><h2><span style="font-family:courier;">mem_car</span>, RC-car with playback</h2></div>
+				<div class="col-md-8"><h2><span style="font-family:courier;">mem_car</span> &nbsp;<small>RC car with playback</small></h2></div>
 			</div>
 			<div class="row">
-				<div class="col-md-6"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis maximus odio, eget fringilla tortor laoreet at. Aliquam erat volutpat. Etiam ac tempus leo. Integer leo felis, vestibulum ac tristique nec, porttitor et ipsum. Fusce bibendum lacinia ipsum nec ullamcorper. Ut pellentesque justo eget ex ullamcorper elementum. Morbi aliquet neque orci, nec blandit leo sollicitudin eget. Donec porta, lacus eget fermentum auctor, quam justo viverra arcu, non elementum neque magna lobortis arcu. Donec in faucibus erat, sed scelerisque sem. Aenean iaculis quam non lorem viverra, vel fringilla justo efficitur.</p></div>
+				<div class="col-md-6"><p>This is the final group project in a class in which we spent most of the semester building a custom processor with an FPGA. The car was constructed from a kit RC car and mounted on top were the FPGA dev board, a motor driver, a wireless module, a PWM circuit, and batteries. The controller was another dev board with a keyboard and wireless module attached. The car was driven with the <kbd>WASD</kbd> keys and remembered its inputs. These could then be replayed back by pressing the <kbd>R</kbd> key, thus allowing the car to playback its previous route. In our succesful demo, we navigated the car around a simple maze, drove it back to the start, and then used the playback feature to autonomously manuever through the maze once again.</p></div>
 				<div class="col-md-6"><img src="img/mem_car.jpg" class="img-rounded img-responsive center-block"></div>
 			</div><br>
 
@@ -162,7 +147,7 @@
 
 
 			<div class="row">
-				<div class="col-md-8"><h2>Snooze n' Shame, social alarm clock</h2></div>
+				<div class="col-md-8"><h2>Snooze n' Shame <small>social alarm clock</small></h2></div>
 			</div>
 			<div class="row">
 				<div class="col-md-12"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis lobortis maximus odio, eget fringilla tortor laoreet at. Aliquam erat volutpat. Etiam ac tempus leo. Integer leo felis, vestibulum ac tristique nec, porttitor et ipsum. Fusce bibendum lacinia ipsum nec ullamcorper. Ut pellentesque justo eget ex ullamcorper elementum. Morbi aliquet neque orci, nec blandit leo sollicitudin eget. Donec porta, lacus eget fermentum auctor, quam justo viverra arcu, non elementum neque magna lobortis arcu. Donec in faucibus erat, sed scelerisque sem. Aenean iaculis quam non lorem viverra, vel fringilla justo efficitur.</p></div>
