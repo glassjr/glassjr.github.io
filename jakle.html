@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Jakle - a Wordle-esque word game by Jake Glass">
+		<meta name="author" content="Jake Glass">
+
+		<link rel="icon" type="image/png" href="favicon.ico">
+
+		<title>Jake Glass - Jakle</title>
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<link href="custom.css" rel="stylesheet">
+	</head>
+
+	<body>
+
+		<!-- FIXED NAVBAR -->
+		<nav class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand" href="index.html">Jake Glass</a>
+				</div>
+				<div id="navbar" class="navbar-collapse collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="resume.html">Resume</a></li>
+						<li><a href="projects.html">Projects</a></li>
+						<li class="active"><a href="jakle.html">Jakle<span class="sr-only">(current)</span></a></li>
+						<li><a href="blog.html">Blog</a></li>
+						<li><a href="tutoring.html">Tutoring</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- CONTENT -->
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8">
+					<h1>Jakle</h1>
+					<p class="text-muted no-bottomm">A Wordle variant. Word is 5, 6, or 7 letters &mdash; picked at random. You get one extra guess for each extra letter.</p>
+
+					<div class="jakle-status">
+						<span class="jakle-status-item">Streak: <strong id="jakle-streak">0</strong></span>
+						<span class="jakle-status-item">Word: <strong id="jakle-length">&mdash;</strong> letters</span>
+						<span class="jakle-status-item jakle-message" id="jakle-message"></span>
+					</div>
+
+					<div id="jakle-board" class="jakle-board" aria-label="Game board"></div>
+
+					<div id="jakle-controls" class="jakle-controls">
+						<button id="jakle-new-game" type="button" class="btn btn-default" style="display:none;">New Game</button>
+					</div>
+
+					<div id="jakle-keyboard" class="jakle-keyboard" aria-label="On-screen keyboard"></div>
+				</div>
+
+				<div class="col-md-4">
+					<div class="panel panel-default jakle-leaderboard-panel">
+						<div class="panel-heading jakle-leaderboard-heading" data-toggle="collapse" data-target="#jakle-leaderboard-body" aria-expanded="true">
+							<h3 class="panel-title">High Scores
+								<span class="jakle-leaderboard-toggle visible-xs visible-sm pull-right">&#9662;</span>
+							</h3>
+						</div>
+						<div id="jakle-leaderboard-body" class="panel-collapse collapse in">
+							<table class="table table-condensed jakle-leaderboard-table no-bottomm">
+								<thead>
+									<tr><th class="text-muted">#</th><th class="text-muted">Initials</th><th class="text-muted text-right">Streak</th></tr>
+								</thead>
+								<tbody id="jakle-leaderboard-rows">
+									<tr><td colspan="3" class="text-center text-muted">No scores yet</td></tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- INITIALS MODAL -->
+		<div class="modal fade" id="jakle-initials-modal" tabindex="-1" role="dialog" aria-labelledby="jakle-initials-title">
+			<div class="modal-dialog modal-sm" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h4 class="modal-title" id="jakle-initials-title">New high score</h4>
+					</div>
+					<div class="modal-body">
+						<p>Streak of <strong id="jakle-final-streak">0</strong>. Enter your initials:</p>
+						<input id="jakle-initials-input" type="text" class="form-control jakle-initials-input" maxlength="3" autocomplete="off" autocapitalize="characters" spellcheck="false" placeholder="AAA">
+					</div>
+					<div class="modal-footer">
+						<button id="jakle-initials-submit" type="button" class="btn btn-primary">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- FOOTER -->
+		<footer class="footer">
+			<div class="container">
+				<p class="text-muted"><a href="https://www.linkedin.com/in/glassjacob/" class="no-underline">LinkedIn</a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="mailto:jake.r.glass@gmail.com" class="no-underline">Email</a></p>
+			</div>
+		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+		<script src="jakle.js"></script>
+	</body>
+</html>

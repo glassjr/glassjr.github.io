@@ -69,3 +69,150 @@ html {
 .muted-link:hover {
   color: #777;
 }
+
+/* ===== Jakle ===== */
+.jakle-status {
+  margin: 20px 0 16px;
+  font-size: 16px;
+  color: #555;
+}
+.jakle-status-item {
+  margin-right: 18px;
+}
+.jakle-message {
+  font-weight: bold;
+}
+.jakle-message.jakle-win { color: #6aaa64; }
+.jakle-message.jakle-loss { color: #c9534f; }
+
+.jakle-board {
+  display: grid;
+  gap: 6px;
+  justify-content: start;
+  margin-bottom: 16px;
+}
+.jakle-row {
+  display: grid;
+  gap: 6px;
+}
+.jakle-tile {
+  width: 52px;
+  height: 52px;
+  border: 2px solid #d3d6da;
+  background: #fff;
+  color: #1a1a1b;
+  font-size: 26px;
+  font-weight: bold;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  user-select: none;
+}
+.jakle-tile.jakle-filled {
+  border-color: #878a8c;
+}
+.jakle-tile.jakle-correct {
+  background: #6aaa64;
+  border-color: #6aaa64;
+  color: #fff;
+}
+.jakle-tile.jakle-present {
+  background: #c9b458;
+  border-color: #c9b458;
+  color: #fff;
+}
+.jakle-tile.jakle-absent {
+  background: #787c7e;
+  border-color: #787c7e;
+  color: #fff;
+}
+.jakle-row.jakle-row-shake .jakle-tile {
+  animation: jakle-shake 0.4s;
+}
+@keyframes jakle-shake {
+  0%, 100% { transform: translateX(0); }
+  20%, 60% { transform: translateX(-6px); }
+  40%, 80% { transform: translateX(6px); }
+}
+
+.jakle-controls {
+  margin-bottom: 12px;
+  min-height: 38px;
+}
+
+.jakle-keyboard {
+  margin-top: 8px;
+  max-width: 520px;
+}
+.jakle-keyboard-row {
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+.jakle-key {
+  flex: 1 0 30px;
+  min-width: 30px;
+  height: 44px;
+  border: none;
+  border-radius: 4px;
+  background: #d3d6da;
+  color: #1a1a1b;
+  font-weight: bold;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0 6px;
+}
+.jakle-key.jakle-key-wide {
+  flex: 1.5 0 50px;
+  font-size: 12px;
+}
+.jakle-key:hover { background: #bbb; }
+.jakle-key.jakle-correct { background: #6aaa64; color: #fff; }
+.jakle-key.jakle-present { background: #c9b458; color: #fff; }
+.jakle-key.jakle-absent { background: #787c7e; color: #fff; }
+
+.jakle-leaderboard-panel {
+  margin-top: 60px;
+}
+.jakle-leaderboard-heading {
+  cursor: pointer;
+}
+.jakle-leaderboard-table td, .jakle-leaderboard-table th {
+  font-family: Menlo, Consolas, monospace;
+}
+.jakle-leaderboard-table .jakle-rank {
+  width: 30px;
+  color: #999;
+}
+.jakle-leaderboard-table .jakle-initials {
+  letter-spacing: 2px;
+}
+
+.jakle-initials-input {
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-family: Menlo, Consolas, monospace;
+  font-size: 28px;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .jakle-leaderboard-panel {
+    margin-top: 24px;
+  }
+}
+@media (max-width: 480px) {
+  .jakle-tile {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+  .jakle-key {
+    height: 40px;
+    font-size: 12px;
+  }
+}
